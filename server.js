@@ -7,7 +7,7 @@ const app = express();
 app.use(express.static('./dist/topicangular'));
 
 app.get('/*',(req,res) =>
-    res.sendFile('index.html',{root:'dist/topicangular'}),
+    res.sendFile('index.html',{root:'dist/topicangular/'}),
 );
 
 // Start the app by listening on the default Heroku port
